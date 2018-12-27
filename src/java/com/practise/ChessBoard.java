@@ -1,8 +1,8 @@
 package com.practise;
 
-public class ChessBoard {
-
-        public static void  DisplayChess()
+public class ChessBoard
+{
+        public static void  displayChess()
         {
             String str="";
             for(int i=0;i<8;i++)
@@ -12,14 +12,17 @@ public class ChessBoard {
                     str+=  "WW|BB|WW|BB|WW|BB|WW|BB|"+"\n";
 
                 }
-                else {
+                else
+                {
                     str+="BB|WW|BB|WW|BB|WW|BB|WW|"+"\n";
                 }
             }
+
             System.out.println(str);
         }
+
         public static void main(String [] args)
         {
-            DisplayChess();
+            displayChess();
         }
-    }
+}

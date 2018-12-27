@@ -1,14 +1,19 @@
 package com.practise;
 
-    public class ExceptionExample {
+    public class ExceptionExample
+    {
+
         public static void main(String args[])
         {
             //NegativeArraySizeException
             int arrSize = -8;
-            try {
+            try
+            {
                 int[] myArray = new int[arrSize];
                 String ex="hello";
-            } catch (NegativeArraySizeException ex) {
+            }
+            catch (NegativeArraySizeException ex)
+            {
                 System.out.println("Can't create array of negative size" + ex);
             }
 
@@ -19,6 +24,7 @@ package com.practise;
             {
                 System.out.println(marks[2]);
             }
+
             catch(ArrayIndexOutOfBoundsException e)
             {
                 //System.out.println("Wrong index number, please enter correct number. " + e);
@@ -29,7 +35,8 @@ package com.practise;
 
             String str=null;
 
-            try{
+            try
+            {
                 if(str.equals("hey"))
                     System.out.println("hey");
             }

@@ -1,14 +1,15 @@
 package com.practise;
 import java.util.*;
 
-public class VowelRemoval {
-
-        public static String [] removeVowels(String [] str) {
+public class VowelRemoval
+{
+        public static String [] removeVowels(String [] str)
+        {
             String []arr=new String[str.length];
+
             for(int i=0;i<str.length;i++)
             {
                 arr[i]= str[i].replaceAll("[aeiou]", "");
-
             }
             return arr;
         }
@@ -20,12 +21,17 @@ public class VowelRemoval {
             int size=in.nextInt();
 
             String[] str=new String[size];
+
             for(int i=0;i<size;i++)
+            {
                 str[i]=in.next();
+            }
 
             String [] res=removeVowels(str);
-            for(int i=0;i<res.length;i++)
-                System.out.println(  "Place Name without Vowels:"+i+" "+res[i]);
 
+            for(int i=0;i<res.length;i++)
+            {
+                System.out.println("Place Name without Vowels:" + i + " " + res[i]);
+            }
         }
     }
